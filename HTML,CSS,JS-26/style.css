@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    position: relative;
+}
+
+.date .time {
+    box-shadow: 0 0 50px rgb(255, 0, 43);
+    border-radius: 50px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 0 20px;
+    border: 2px solid rgb(38, 0, 255);
+}
+
+.date .base {
+    font-size: 150px;
+    display: flex;
+    position: relative;
+    gap: 220px;
+    text-shadow: 0 0 20px rgb(55, 255, 0);
+    position: absolute;
+    top: 190px;
+}
+
+.base p:first-child {
+    transform: rotate(30deg);
+}
+
+.base p:last-child {
+    transform: rotate(-30deg);
+}
+
+@media only screen and (max-width:650px) {
+    .date .time {
+        width: 300px;
+        height: 250px;
+        font-size: 35px;
+    }
+
+    .date .base {
+        font-size: 100px;
+        gap: 170px;
+        top: 200px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .date {
+        padding-top: 100px;
+    }
+
+    .date .time {
+        width: 220px;
+        height: 180px;
+        font-size: 22px;
+    }
+
+    .date .base {
+        font-size: 80px;
+        gap: 150px;
+        top: 190px;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .date {
+        padding-top: 100px;
+    }
+
+    .date .time {
+        width: 200px;
+        height: 150px;
+        font-size: 20px;
+    }
+
+    .date .base {
+        font-size: 70px;
+        gap: 120px;
+        top: 175px;
+    }
+}
