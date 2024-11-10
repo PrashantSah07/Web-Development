@@ -283,4 +283,4 @@ async function data() {
 
 }
 
-data();
+data(); 
