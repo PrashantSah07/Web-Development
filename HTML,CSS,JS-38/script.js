@@ -26,5 +26,3 @@ async function weatherReport() {
 
 search.addEventListener("click", weatherReport);
 
-
-
