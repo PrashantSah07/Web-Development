@@ -197,4 +197,4 @@ async function getdata() {
     }
 }
 
-getdata();
+getdata(); 
