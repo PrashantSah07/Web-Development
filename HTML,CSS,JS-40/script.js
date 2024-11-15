@@ -1,52 +1,25 @@
-let data1 = (document.getElementsByClassName('data')[0]);
-let data2 = (document.getElementsByClassName('data')[1]);
-let data3 = (document.getElementsByClassName('data')[2]);
+// localStorage.setItem = ("key", "valuee");
+// localStorage.setItem = ("color", "red");
 
-let cut = document.querySelector('.cut');
-let searchButton = document.querySelector('#search-button');
-let inputSearch = document.querySelector('#input-search');
-let cityName = document.querySelector('.cityName');
+// let name = prompt("Enter your name: ");
+// let age = prompt("Enter your age: ");
 
+// localStorage.setItem(name, age);
 
-async function getData() {
-    cityName.innerHTML = inputSearch.value
-    cut.style.display = "block"
-    let inputValue = inputSearch.value;
-    console.log("fetching data, please wait...");
-    let p = fetch(`https://goweather.herokuapp.com/weather/${inputValue}`);
-
-    try {
-
-        let response = await p;
-        let response2 = await response.json();
-        data1.innerHTML = `<span>${response2.temperature}</span>`;
-        data1.innerHTML = data1.innerHTML + "<span>🌡️</span>";
-
-        data2.innerHTML = `<span>${response2.description}</span>`;
-        data2.innerHTML = data2.innerHTML + "<span>⛅</span>";
-
-        data3.innerHTML = `<span>${response2.wind}</span>`;
-        data3.innerHTML = data3.innerHTML + "<span>💨</span>";
-
-    }
-
-    catch (error) {
-        console.log(error)
-    }
-
-    finally {
-        console.log("Done!")
-    }
-}
-
-searchButton.addEventListener("click", getData);
+// console.log(localStorage);
 
 
-cut.addEventListener("click", function () {
-    inputSearch.value = ""
-    cut.style.display = "none"
-    cityName.innerHTML = "'Enter city name'";
-    data1.innerHTML = "";
-    data2.innerHTML = "";
-    data3.innerHTML = "";
-})
+// console.log(localStorage.getItem("color"));
+
+// if (name == "prashant" || name == "anisha") {
+//     localStorage.removeItem(name);
+// };
+
+// localStorage.removeItem("color");
+// localStorage.clear();
+
+localStorage.setItem = ("key", "valuee");
+localStorage.setItem = ("color", "red");
+console.log(localStorage.length);
+console.log(localStorage.key(3));
+localStorage.clear();
