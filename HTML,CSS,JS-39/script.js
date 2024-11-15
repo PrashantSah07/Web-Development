@@ -21,4 +21,4 @@ let a = ("heyyyyyyyyy;");
 document.cookie = encodeURIComponent(a)
 
 console.log(document.cookie);
-console.log(decodeURIComponent(a))
+console.log(decodeURIComponent(a)) 
