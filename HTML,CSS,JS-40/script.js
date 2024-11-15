@@ -50,4 +50,3 @@ cut.addEventListener("click", function () {
     data2.innerHTML = "";
     data3.innerHTML = "";
 })
-
