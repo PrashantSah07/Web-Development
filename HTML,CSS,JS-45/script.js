@@ -1,25 +1,25 @@
-class Animal {
+// class Animal {
 
-    cat() {
-        console.log("Meow-Meow");
-    }
-}
+//     cat() {
+//         console.log("Meow-Meow");
+//     }
+// }
 
-class Derived extends Animal {
+// class Derived extends Animal {
 
-    dog() {
-        console.log("Bhow-Bhow");
-    }
-}
+//     dog() {
+//         console.log("Bhow-Bhow");
+//     }
+// }
 
 
 
-let a = new Animal();
-a.cat();
+// let a = new Animal();
+// a.cat();
 
-let d = new Derived();
-d.dog();
-d.cat();
+// let d = new Derived();
+// d.dog();
+// d.cat();
 
 
 
@@ -114,7 +114,7 @@ d.cat();
 // m.Behavior();
 // m.eat();
 // m.roar();
-// m.sleep()
+// m.sleep();
 
 // let c = new chimpanzee();
 // c.jump();
@@ -123,5 +123,71 @@ d.cat();
 // c.Behavior();
 // c.eat();
 // c.roar();
-// c.sleep()
+// c.sleep();
 
+
+
+
+
+class animal {
+    constructor(name) {
+        this.animalName = name
+    }
+
+    eat() {
+        console.log(this.animalName + " eating")
+    }
+
+    roar() {
+        console.log(this.animalName + " roaring")
+    }
+
+    sleep() {
+        console.log(this.animalName + " sleeping")
+    }
+
+}
+
+class monkey extends animal {
+    eatBanana() {
+        console.log(this.animalName + " eating banana");
+    }
+
+    Agility() {
+        console.log(this.animalName + " are incredibly agile climbers, thanks to their prehensile tails (in some species) and strong limbs.")
+    }
+
+    Behavior() {
+        console.log(this.animalName + " live in complex social groups and display advanced social interactions like cooperation, grooming, and conflict resolution.")
+    }
+}
+
+class chimpanzee extends monkey {
+    jump() {
+        console.log(this.animalName + " jumping")
+    }
+}
+
+let a = new animal("lion");
+
+a.eat();
+a.roar();
+a.sleep();
+
+let m = new monkey("monkey");
+
+m.eatBanana();
+m.Agility();
+m.Behavior();
+m.eat();
+m.roar();
+m.sleep();
+
+let c = new chimpanzee("chimpanzee");
+c.jump();
+c.eatBanana();
+c.Agility();
+c.Behavior();
+c.eat();
+c.roar();
+c.sleep();
