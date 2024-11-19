@@ -98,3 +98,4 @@ class College {
 let student1 = new College("Prashant", "0191EE211027", "TIT");
 let student2 = new College("Rahul", "0191CS211034", "TIT");
 let student3 = new College("Anjali", "0191EC211045", "TIT");
+ 
