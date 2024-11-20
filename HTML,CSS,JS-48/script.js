@@ -17,25 +17,44 @@
 
 
 
+// class animal {
+//     static run() {
+//         console.log("running");
+//     }
+// }
+
+// class dog extends animal {
+//     static go() {
+//         console.log("going");
+//     }
+
+//     static run() {
+//         super.run();
+//         console.log("running-running");
+//     }
+// }
+// let a = new animal();
+// animal.run();
+
+// let d = new dog();
+// dog.run()
+// dog.go(); 
+
+
+
+
 class animal {
-    static run() {
-        console.log("running");
+    constructor(name) {
+        this.animalName = animal.uppercase(name);
+    }
+    walk() {
+        console.log("Animal '" + this.animalName + "' walking...")
+    }
+
+    static uppercase(name) {
+        return name.charAt(0).toUpperCase() + name.substring(1, name.length);
     }
 }
 
-class dog extends animal {
-    static go() {
-        console.log("going");
-    }
-
-    static run() {
-        super.run();
-        console.log("running-running");
-    }
-}
-let a = new animal();
-animal.run();
-
-let d = new dog();
-dog.run()
-dog.go();
+let a = new animal("lion");
+a.walk();
