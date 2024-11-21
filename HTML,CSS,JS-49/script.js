@@ -164,4 +164,4 @@ c.runn();
 
 console.log(c instanceof newanimal);
 console.log(c instanceof animal);
-console.log(a instanceof newanimal);
+console.log(a instanceof newanimal); 
