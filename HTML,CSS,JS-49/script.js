@@ -141,3 +141,27 @@ console.log(a._name);
 a.name;
 console.log(a._name);
 a.run();
+
+
+
+/* ======== INSTANCE OF ======== */
+
+let cond = a instanceof animal;
+console.log(cond);
+let b;
+console.log(b instanceof animal);
+
+
+class newanimal extends animal {
+    runn() {
+        console.log("i am new animal class which extends animal class");
+    }
+}
+
+let c = new newanimal();
+
+c.runn();
+
+console.log(c instanceof newanimal);
+console.log(c instanceof animal);
+console.log(a instanceof newanimal);
