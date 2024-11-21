@@ -113,6 +113,35 @@
 
 
 
+// class complex {
+//     constructor(real, imaginary) {
+//         this.real = real;
+//         this.imaginary = imaginary;
+//         console.log(`real part: ${this.real}, imaginary part: ${this.imaginary}`)
+//     }
+
+//     set changeNo(a) {
+//         this.real = a;
+//     }
+
+//     set changeNo2(b) {
+//         this.imaginary = b;
+//         console.log(`real part: ${this.real}, imaginary part: ${this.imaginary}`)
+//     }
+
+// }
+
+// let c = new complex(2, 4);
+// c.changeNo = (6);
+// c.changeNo2 = (2);
+
+
+// let c2 = new complex(6, 2);
+// c2.changeNo = (10);
+// c2.changeNo2 = (0);
+// console.log(c, c2)
+
+
 
 
 class animal {
