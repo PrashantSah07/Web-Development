@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.time {
+    font-size: 40px;
+    height: 600px;
+    width: 620px;
+    border: 5px solid black;
+    border-radius: 5000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(227, 241, 253);
+}
+
+.time #point {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.numbers p:nth-child(1) {
+    position: absolute;
+    top: 5px;
+    right: 290px;
+}
+
+.numbers p:nth-child(2) {
+    position: absolute;
+    top: 50px;
+    right: 140px;
+}
+
+.numbers p:nth-child(3) {
+    position: absolute;
+    top: 145px;
+    right: 49px;
+}
+
+.numbers p:nth-child(4) {
+    position: absolute;
+    top: 270px;
+    right: 10px;
+}
+
+.numbers p:nth-child(5) {
+    position: absolute;
+    top: 413px;
+    right: 58px;
+}
+
+.numbers p:nth-child(6) {
+    position: absolute;
+    top: 508px;
+    right: 150px;
+}
+
+.numbers p:nth-child(7) {
+    position: absolute;
+    top: 546px;
+    right: 300px;
+}
+
+.numbers p:nth-child(8) {
+    position: absolute;
+    top: 510px;
+    right: 439px;
+}
+
+.numbers p:nth-child(9) {
+    position: absolute;
+    top: 417px;
+    right: 539px;
+}
+
+.numbers p:nth-child(10) {
+    position: absolute;
+    top: 280px;
+    right: 585px;
+}
+
+.numbers p:nth-child(11) {
+    position: absolute;
+    top: 155px;
+    right: 534px;
+}
+
+.numbers p:nth-child(12) {
+    position: absolute;
+    top: 50px;
+    right: 446px;
+}
+
+.time #hour {
+    height: 120px;
+    border: 2px solid black;
+    transition: 0.2s;
+    transform-origin: 0 0px;
+    position: absolute;
+    top: 295px;
+    animation: rotate 43200s linear infinite;
+}
+
+.time #minute {
+    height: 170px;
+    border: 2px solid rgb(13, 250, 9);
+    transition: 0.2s;
+    transform-origin: 0 0px;
+    position: absolute;
+    top: 295px;
+    animation: rotate 3600s linear infinite;
+}
+
+.time #second {
+    height: 220px;
+    border: 2px solid rgb(228, 26, 26);
+    transition: 0.2s;
+    transform-origin: 0 0px;
+    position: absolute;
+    top: 295px;
+    animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+    from {}
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    .time {
+        font-size: 40px;
+        height: 510px;
+        width: 520px;
+    }
+
+    .numbers p:nth-child(1) {
+        top: 5px;
+        right: 240px;
+    }
+
+    .numbers p:nth-child(7) {
+        top: 452px;
+        right: 240px;
+    }
+
+    .numbers p:nth-child(4) {
+        top: 235px;
+        right: 10px;
+    }
+
+    .numbers p:nth-child(10) {
+        top: 240px;
+        right: 477px;
+    }
+
+    .numbers p:nth-child(2) {
+        top: 41px;
+        right: 118px;
+    }
+
+    .numbers p:nth-child(3) {
+        top: 123px;
+        right: 42px;
+    }
+
+    .numbers p:nth-child(5) {
+        top: 337px;
+        right: 42px;
+    }
+
+    .numbers p:nth-child(6) {
+        top: 415px;
+        right: 118px;
+    }
+
+    .numbers p:nth-child(8) {
+        top: 415px;
+        right: 367px;
+    }
+
+    .numbers p:nth-child(9) {
+        top: 337px;
+        right: 442px;
+    }
+
+    .numbers p:nth-child(11) {
+        top: 123px;
+        right: 428px;
+    }
+
+    .numbers p:nth-child(12) {
+        top: 41px;
+        right: 358px;
+    }
+
+    .time #hour {
+        height: 110px;
+    }
+
+    .time #minute {
+        height: 125px;
+    }
+
+    .time #second {
+        height: 140px;
+    }
+
+    .time #hour {
+        height: 140px;
+        top: 255px;
+    }
+
+    .time #minute {
+        height: 160px;
+        top: 255px;
+    }
+
+    .time #second {
+        height: 180px;
+        top: 255px;
+    }
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .container {
+        margin-top: 85px;
+    }
+
+    .time {
+        font-size: 35px;
+        height: 410px;
+        width: 420px;
+    }
+
+    .numbers p:nth-child(1) {
+        top: 5px;
+        right: 185px;
+    }
+
+    .numbers p:nth-child(7) {
+        top: 360px;
+        right: 185px;
+    }
+
+    .numbers p:nth-child(4) {
+        top: 188px;
+        right: 10px;
+    }
+
+    .numbers p:nth-child(10) {
+        top: 188px;
+        right: 383px;
+    }
+
+    .numbers p:nth-child(2) {
+        top: 37px;
+        right: 88px;
+    }
+
+    .numbers p:nth-child(3) {
+        top: 105px;
+        right: 30px;
+    }
+
+    .numbers p:nth-child(5) {
+        top: 268px;
+        right: 30px;
+    }
+
+    .numbers p:nth-child(6) {
+        top: 325px;
+        right: 88px;
+    }
+
+    .numbers p:nth-child(8) {
+        top: 332px;
+        right: 285px;
+    }
+
+    .numbers p:nth-child(9) {
+        top: 268px;
+        right: 355px;
+    }
+
+    .numbers p:nth-child(11) {
+        top: 105px;
+        right: 348px;
+    }
+
+    .numbers p:nth-child(12) {
+        top: 37px;
+        right: 292px;
+    }
+
+    .time #hour {
+        height: 110px;
+        top: 200px;
+    }
+
+    .time #minute {
+        height: 125px;
+        top: 200px;
+    }
+
+    .time #second {
+        height: 145px;
+        top: 200px;
+    }
+
+}
+
+
+@media only screen and (max-width:450px) {
+
+    .container {
+        margin-top: 150px;
+    }
+
+    .time {
+        font-size: 25px;
+        height: 285px;
+        width: 293px;
+    }
+
+    .numbers p:nth-child(1) {
+        top: 5px;
+        right: 130px;
+    }
+
+    .numbers p:nth-child(7) {
+        top: 246px;
+        right: 130px;
+    }
+
+    .numbers p:nth-child(4) {
+        top: 125px;
+        right: 7px;
+    }
+
+    .numbers p:nth-child(10) {
+        top: 125px;
+        right: 263px;
+    }
+
+    .numbers p:nth-child(2) {
+        top: 23px;
+        right: 68px;
+    }
+
+    .numbers p:nth-child(3) {
+        top: 63px;
+        right: 26px
+    }
+
+    .numbers p:nth-child(5) {
+        top: 187px;
+        right: 26px;
+    }
+
+    .numbers p:nth-child(6) {
+        top: 227px;
+        right: 68px;
+    }
+
+    .numbers p:nth-child(8) {
+        top: 229px;
+        right: 193px;
+    }
+
+    .numbers p:nth-child(9) {
+        top: 187px;
+        right: 241px;
+    }
+
+    .numbers p:nth-child(11) {
+        top: 67px;
+        right: 233px;
+    }
+
+    .numbers p:nth-child(12) {
+        top: 23px;
+        right: 192px;
+    }
+
+    .time #hour {
+        height: 65px;
+        top: 140px;
+    }
+
+    .time #minute {
+        height: 80px;
+        top: 140px;
+    }
+
+    .time #second {
+        height: 102px;
+        top: 140px;
+    }
+
+}
