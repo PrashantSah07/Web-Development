@@ -18,7 +18,7 @@ body {
     width: 450px;
     height: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     font-size: 45px;
     flex-wrap: wrap;
