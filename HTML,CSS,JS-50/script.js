@@ -37,4 +37,3 @@ function data(int) {
     console.log(r3);
 
 })();
-
