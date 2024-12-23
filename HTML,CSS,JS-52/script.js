@@ -24,7 +24,7 @@
 
 // Global scope 
 
-let i = 7;
+let i = 7; 
 
 {
     let a = 5;
