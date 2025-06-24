@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutation Observer & Intersection Observer</title>
+</head>
+
+<!-- <body>
+
+    <div id="container1">
+
+    </div>
+    <div id="container2">
+
+    </div>
+    <button onclick="addNew(), ad()">Add New Element</button>
+
+</body>
+<script>
+    const container1 = document.getElementById("container1");
+    const container2 = document.getElementById("container2");
+
+    const observer = new MutationObserver((mutations) => {
+        console.log("Container mein kuch badla hai!", mutations);
+    });
+
+    observer.observe(container1, { childList: true });
+    observer.observe(container2, { childList: true });
+
+
+    function addNew() {
+        const newP = document.createElement("h1");
+        newP.textContent = "New content added in container 1";
+        container1.appendChild(newP);
+    }
+
+    function ad() {
+        const newP = document.createElement("h2");
+        newP.textContent = "New content added in container 2";
+        container2.appendChild(newP);
+    }
+</script> -->
+
+<body>
+
+    <div style="height: 800px;"></div>
+    <div id="box" style="height: 100px; background: lightgreen;">
+        Watch me
+    </div>
+
+</body>
+<script>
+    const box = document.getElementById("box");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log("Box screen mein dikh raha hai!");
+            }
+        });
+    });
+
+    observer.observe(box);
+</script>
+
+</html>
